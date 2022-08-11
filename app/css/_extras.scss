@@ -1,0 +1,300 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.d-flex{
+    display: flex;
+}
+
+.d-center{
+    display: flex ;
+    justify-content: center;
+}
+
+
+
+.d-around{
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.d-end{
+    display: flex;
+    justify-content: flex-end;
+}
+
+.d-start{
+    display: flex;
+    justify-content: flex-start;
+}
+
+.rounded-corners{
+    border-radius: 10px;
+}
+
+
+
+.col-80{
+    width: 80%;
+}
+
+.uppercase{
+    text-transform: uppercase;
+}
+
+
+/**
+FONTS
+***/
+
+body{
+    font-family: 'Open Sans', sans-serif;
+}
+
+
+/**
+nav
+***/
+nav{
+    .brand-logo{
+        height: 100%;
+    }
+}
+
+
+/***********************************
+   page
+    ***********************************/    
+
+    .carousel ul{
+        margin: 0 auto;
+        display: flex;
+        justify-content: center;
+    }
+
+    #cal-1{
+        background: url('../img/ed-robertson-eeSdJfLfx1A-unsplash.jpg');
+        background-size: cover;
+        background-position: center;
+        z-index: 10;
+    }
+
+    #cal-2{
+        background: url('https://d9zuehkdkxba0.cloudfront.net/wp-content/uploads/2022/02/Argentina-D%C3%ADaz.jpg');
+        background-size: cover;
+        background-position: center;
+        z-index: 10;
+    }
+    .carousel-text{
+        width: 100%;
+        height: 100%;
+        backdrop-filter: blur(5px);
+
+        h2,p{
+            margin: 0 auto;
+        }
+
+    }
+
+    .w-100{
+        width: 100% !important;
+    }
+/*****
+*//////
+@import 'variables';
+
+.accent-c1{
+    color: $color-1;
+    
+}
+
+.accent-c1-25{
+    color: darken($color-1, 25%) !important;
+}
+.accent-c5{
+    color: $color-5;
+    
+}
+
+.acc-c5-bg-c3{
+    color: $color-3;
+    background-color: $color-5;
+
+    &:hover, &:focus{
+        background-color: $color-3 !important;
+        color: $color-5 !important;
+    }
+}
+
+.acc-c5-bg-c1{
+    color: $color-5;
+    background-color: $color-1;
+}
+body{
+    background-color: $color-3;
+
+    min-height: 100vh !important;
+}
+
+.bg-c3-l75{
+    background-color: lighten($color-3, 75%);
+}
+
+#lower-nav{
+    background-color: $color-2;
+    *{
+        color: darken($color-2, 70%);
+    }
+}
+
+#upper-nav {
+    background-color: $color-1 !important;
+    margin-bottom: 2em;
+
+    a{
+        color: darken($color-1, 70%);
+    margin: 0 0.25em;
+    }
+
+}
+
+footer{
+    background-color: $color-1 !important;
+    *{
+        color: darken($color-1, 70%);
+    }
+
+}
+
+
+.splide__slide{
+    
+    .item-img{
+        height: 100%;
+        width: auto;
+    }
+
+    .splide__arrows{
+        background: none !important;
+        fill: none !important;
+        border: none;
+    }
+}
+
+.item-product{
+    .item-product-img{
+        max-height: 20rem !important;
+        .responsive-img{
+            max-height: 15rem !important;
+        }
+    }
+}
+
+.prod-img{
+    max-height: 25rem !important;
+   
+}
+
+
+
+.cover-img{
+    max-width: 260px !important;
+}
+
+#adminprod{
+    .img{
+        width: 100px !important;
+        img{
+            height: 100% !important;
+        }
+    }
+}
+
+
+@media #{$large-and-up} {
+    #pornombre,#porcategoria,.fcont{
+    
+    .item{
+        width: 25% !important;
+    }
+    }
+
+    .d-center-imp.open{
+        display: flex !important;
+        flex-direction: column !important;
+        justify-content: center !important;
+        align-items: center !important;
+        align-self: center;
+        tbody,thead{
+            width: 100% !important;
+        }
+        tr{
+        display: flex !important;
+        justify-content: space-evenly !important;
+        width: 100% !important;
+        margin: 0 auto;
+            td,th{
+                text-align: center !important;
+                margin: 0 auto;
+                width: 33% !important;
+            }
+        }
+        
+    }
+    
+}
+
+
+@media #{$medium-and-down} {
+    #pornombre,#porcategoria,.fcont{
+    
+        .item{
+            width: 50% !important;
+        }
+        }
+
+        
+  }
+
+
+  .modaleditarproducto{
+    img{
+        max-height:15vh !important;
+        width: auto;
+    }
+
+  }
+
+  /*Fix carouel*/
+button{
+
+    &.splide__arrow,.splide__arrow--next,.splide__arrow--prev{
+        background: transparent !important;
+        fill: none !important;
+        border: none;
+        &:hover, &:focus{
+            background: transparent !important;
+        }
+    }
+}
+
+/* CART */
+#cart-items{
+    tr{
+        border: none !important;
+    }
+}
+
+/* PRODUCTS */
+#detalledelproducto{
+
+    input[type=number]::-webkit-inner-spin-button, 
+    input[type=number]::-webkit-outer-spin-button{
+      opacity: 1 !important;
+      color: $color-1 !important;
+    
+    }
+}
